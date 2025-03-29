@@ -86,5 +86,13 @@ namespace DilanovaLanguage
                     return DilanovaLanguageEntities.GetContext().ClientService.Where(x => x.ClientID == this.ID).Max(p => p.StartTime).ToString("dd.MM.yyyy");
             }
         }
+
+        public string GenderName
+        {
+            get
+            {
+                return Gender.Name;
+            }
+        }
     }
 }
